@@ -1,8 +1,8 @@
 name: 뉴스링크크롤러
 
-on: [push] 
-#     schedule:
-#     - cron: '2 * * * *'
+on:  
+     schedule:
+     - cron: '1 * * * *'
 
 jobs:
   build:
@@ -27,7 +27,5 @@ jobs:
         pip install lxml
                 
     - name: Run! # news_list_crawler.py 파일을 실행! 
-#       env:
-#         SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
       run: | 
         python news_list_crawler.py
