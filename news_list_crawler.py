@@ -25,7 +25,7 @@ def save_file(data):
     file = open(os.path.join(BASE_DIR, 'news_list.txt'), 'w', encoding='utf-8')
     file.write(data)
     file.close()
-    print('저장완료')
+    print('저장완료>>',os.path.join(BASE_DIR, 'news_list.txt'))
 
 category = ['0401','0402','0403','0404','0405','0408','0409']
 news_href_list = []
