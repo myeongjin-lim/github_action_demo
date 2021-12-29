@@ -2,6 +2,9 @@ import requests as req
 import os
 from bs4 import BeautifulSoup as bs
 
+LOCATION = r"github_action_demo\instantclient_21_3"
+os.environ["PATH"] = LOCATION + ";" + os.environ["PATH"]
+
 def crawling_hankyung_news_link(news_url, pageNum):
     news_href_list = []
     
