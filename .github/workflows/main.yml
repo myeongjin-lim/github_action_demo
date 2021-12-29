@@ -1,10 +1,10 @@
 name: 뉴스링크크롤러업데이트
 
-# on: [push]  
+on: [push]  
 
-on: 
-  schedule:
-    - cron: '1 * * * *'
+# on: 
+#   schedule:
+#     - cron: '1 * * * *'
 
 jobs:
   build:
