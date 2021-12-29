@@ -1,0 +1,32 @@
+name: 뉴스링크크롤러
+
+on:
+    schedule:
+       - cron: '2 * * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: [3.6, 3.7] # 파이썬 3.6, 3.7 버전으로
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up python ${{ matrix.python-version }}
+      uses: actions/setup-python@v1
+      with:
+        python-version: ${{ matrix.python-version }}
+    - name : Python pip upgrade # 파이썬 pip 업그레이드
+      run: python -m pip install --upgrade pip 
+    
+    - name: Install python package # 파이썬 관련 패키지를 설치
+      run: |        
+        pip install beautifulsoup4
+        pip install requests
+                
+    - name: Run! # news_list_crawler.py 파일을 실행! 
+#       env:
+#         SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+      run: | 
+        python news_list_crawler.py
