@@ -2,7 +2,7 @@ name: 뉴스링크크롤러업데이트
 
 on:  
   schedule:
-    - cron: '1/5 * * * *'
+    - cron: '1 * * * *'
 
 jobs:
   build:
