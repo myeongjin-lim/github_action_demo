@@ -5,8 +5,6 @@
 
 
 import requests as req
-
-from tqdm import tqdm
 from bs4 import BeautifulSoup as bs
 
 def crawling_hankyung_news_link(news_url, pageNum):
