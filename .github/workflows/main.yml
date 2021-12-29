@@ -1,8 +1,8 @@
 name: 뉴스링크크롤러업데이트
 
 on:  
- schedule:
- - cron: '1/10 * * * *'
+  schedule:
+    - cron: '1/5 * * * *'
 
 jobs:
   build:
