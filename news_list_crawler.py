@@ -1,10 +1,5 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[2]:
-
-
 import requests as req
+import os
 from bs4 import BeautifulSoup as bs
 
 def crawling_hankyung_news_link(news_url, pageNum):
@@ -25,7 +20,7 @@ def crawling_hankyung_news_link(news_url, pageNum):
     return news_href_list
 
 def save_file(data):
-    file = open('url_list.txt', 'w')
+    file = open(os.path.join(BASE_DIR, 'news_list.txt'), 'w', encoding='utf-8')
     file.write(data)
     file.close()
     print('저장완료')
@@ -38,10 +33,3 @@ for cate in category:
     news_href_list.append(crawling_hankyung_news_link(url, 10))
     
 save_file(str(news_href_list))
-
-
-# In[ ]:
-
-
-
-
