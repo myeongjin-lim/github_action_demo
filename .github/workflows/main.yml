@@ -1,6 +1,6 @@
 name: 뉴스링크크롤러
 
-on: [push]
+on: [push] 
 #     schedule:
 #     - cron: '2 * * * *'
 
