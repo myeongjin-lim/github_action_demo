@@ -1,4 +1,4 @@
-name: BloodInfo Bot (혈액정보 봇)
+name: 뉴스링크크롤러
 
 on:
     schedule:
