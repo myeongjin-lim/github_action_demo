@@ -1,10 +1,12 @@
 name: 뉴스링크크롤러업데이트
 
-on: [push]  
+# push해서 바로 실행
+# on: [push]  
 
-# on: 
-#   schedule:
-#     - cron: '1 * * * *'
+# 1분마다 동작하는 cron 스케줄러
+on: 
+  schedule:
+    - cron: '1 * * * *'
 
 jobs:
   build:
