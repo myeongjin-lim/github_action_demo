@@ -1,4 +1,4 @@
-name: 뉴스링크크롤러
+name: 뉴스링크크롤러업데이트
 
 on:  
  schedule:
