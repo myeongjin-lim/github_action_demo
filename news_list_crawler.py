@@ -18,6 +18,7 @@ headers = {'User-Agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/5
 category = ['0401','0402','0403','0404','0405','0408','0409']
 news_href_list = []
 
+#카테고리별 뉴스링크 수집
 for cate in category:
     
     for pageNo in range(1,11):
@@ -42,10 +43,13 @@ sql = 'insert into news_link values(:1,:2)'
 
 for href in news_href_list:
     cursor.execute(sql,href)
+    
+print('저장된 링크수>>',cursor.rowcount)
 
+# SQL실행 후 반영 및 커서, 데이터베이스객체 연결종료
 cursor.close()
 conn.commit()
-conn.close()
+conn.close()ㅔ
 
 # import requests as req
 # import os
