@@ -22,7 +22,7 @@ for cate in category:
         for tit in tit_tags:
             news_href_list.append(tit.get('href'))  
 
-with open(os.path.join(BASE_DIR, 'news_list.txt'), 'w', encoding='utf-8') as text_file:
-    text_file.write(str(news_href_list)
-
-print('수집완료>>',os.path.join(BASE_DIR, 'news_list.txt'))
+with open(os.path.join(BASE_DIR, 'news_list.txt'), 'w+', encoding='utf-8') as text_file:
+    text_file.write(str(news_href_list))
+    
+print('수집완료')
