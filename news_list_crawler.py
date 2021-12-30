@@ -39,7 +39,7 @@ conn = cx_Oracle.connect(oracle_user,oracle_password, '{}:{}/{}'.format(oracle_u
 # 커서생성
 cursor = conn.cursor()
 
-sql = 'insert into news_link values(:1,:2)'
+sql = 'insert into news_link values(:1,:2, )'
 
 for href in news_href_list:
     cursor.execute(sql,href)
