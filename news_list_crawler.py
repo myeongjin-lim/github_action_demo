@@ -25,4 +25,4 @@ for cate in category:
 with open(os.path.join(BASE_DIR, 'news_list.txt'), 'w+', encoding='utf-8') as text_file:
     text_file.write(str(news_href_list))
     
-print('수집완료')
+print('수집완료>> ',os.path.join(BASE_DIR, 'news_list.txt'))
