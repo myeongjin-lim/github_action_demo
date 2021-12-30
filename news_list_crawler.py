@@ -1,5 +1,6 @@
 import requests as req
 import os
+from os.path import abspath
 from bs4 import BeautifulSoup as bs
 
 BASE_DIR = os.path.dirname(os.path.abspath("__file__"))
