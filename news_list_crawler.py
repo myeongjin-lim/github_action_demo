@@ -49,7 +49,7 @@ print('저장된 링크수>>',cursor.rowcount)
 # SQL실행 후 반영 및 커서, 데이터베이스객체 연결종료
 cursor.close()
 conn.commit()
-conn.close()ㅔ
+conn.close()
 
 # import requests as req
 # import os
