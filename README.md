@@ -50,4 +50,5 @@ ex) 빌드와 테스트 코드의 수행인 두 작업을 순차적으로 실행
 워크 플로우의 가장 작은 요소로 직접 만들어 사용할 수 있고 마켓에 등록된 요소를 가져와 사용할 수 있다.
 
 ## ○ 참고문서
-[Github Actions으로 배포 자동화하기](https://meetup.toast.com/posts/286)
+[Github Actions으로 배포 자동화하기](https://meetup.toast.com/posts/286)<br>
+[Github profile 예쁘게 꾸미기](https://velog.io/@woo0_hooo/Github-github-profile-%EA%B0%84%EC%A7%80%EB%82%98%EA%B2%8C-%EA%BE%B8%EB%AF%B8%EA%B8%B0)
