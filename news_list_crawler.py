@@ -41,8 +41,9 @@ cursor = conn.cursor()
 
 sql = 'insert into news_link values(:1,:2)'
 
-for href in news_href_list:
-    cursor.execute(sql,href)
+# for href in news_href_list:
+#     cursor.execute(sql,href)
+cursor.execute(sql, href[0])
     
 print('저장된 링크수>>',cursor.rowcount)
 
